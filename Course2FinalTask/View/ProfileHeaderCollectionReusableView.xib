@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileHeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="ProfileHeaderCollectionReusableView" customModule="Course2FinalTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelFullName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11T-2M-XkS">
+                    <rect key="frame" x="86" y="-6" width="91.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelFollowers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLq-GX-RCe">
+                    <rect key="frame" x="86" y="47" width="97" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="labelFollowing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnX-mt-suO">
+                    <rect key="frame" x="207.5" y="47" width="96.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dtu-5o-GGt">
+                    <rect key="frame" x="8" y="-6" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="FeX-bb-qob"/>
+                        <constraint firstAttribute="width" constant="70" id="Qdg-p9-TAX"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UnX-mt-suO" secondAttribute="trailing" constant="16" id="Ont-k2-co4"/>
+                <constraint firstItem="11T-2M-XkS" firstAttribute="leading" secondItem="dtu-5o-GGt" secondAttribute="trailing" constant="8" symbolic="YES" id="UVl-0P-1zj"/>
+                <constraint firstItem="dtu-5o-GGt" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="ZBL-CT-sa0"/>
+                <constraint firstItem="cLq-GX-RCe" firstAttribute="leading" secondItem="dtu-5o-GGt" secondAttribute="trailing" constant="8" id="biR-s1-mK3"/>
+                <constraint firstItem="11T-2M-XkS" firstAttribute="top" secondItem="dtu-5o-GGt" secondAttribute="top" id="l0I-PW-Ep4"/>
+                <constraint firstItem="UnX-mt-suO" firstAttribute="bottom" secondItem="cLq-GX-RCe" secondAttribute="bottom" id="lxi-v4-hm9"/>
+                <constraint firstAttribute="bottom" secondItem="dtu-5o-GGt" secondAttribute="bottom" constant="8" id="u3q-t5-3OG"/>
+                <constraint firstItem="cLq-GX-RCe" firstAttribute="bottom" secondItem="dtu-5o-GGt" secondAttribute="bottom" id="uLa-Bm-4xw"/>
+            </constraints>
+            <connections>
+                <outlet property="labelFollowers" destination="cLq-GX-RCe" id="W3m-Eg-vk9"/>
+                <outlet property="labelFollowing" destination="UnX-mt-suO" id="v5c-4q-3TT"/>
+                <outlet property="labelFullName" destination="11T-2M-XkS" id="Hrq-IQ-i1b"/>
+                <outlet property="postImage" destination="dtu-5o-GGt" id="aJf-lt-5jL"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="81.696428571428569"/>
+        </collectionReusableView>
+    </objects>
+</document>
